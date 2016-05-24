@@ -9,14 +9,13 @@
 </head>
 <body>
     <ul id="menu">
-        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-        <li>@Html.ActionLink("Resume", "Index", "Resume")</li>
-        <li>@Html.ActionLink("About me", "About", "Home")</li>
-        <li>Projects</li>
+        <li>@Html.ActionLink("About Me", "About", "Home")</li>
+        <li>@Html.ActionLink("Resume", "Resume", "Home")</li>
+        <li>@Html.ActionLink("Projects", "Projects", "Home")</li>
+        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
     </ul>
     <section id="main">
         @RenderBody()
-        <p>Vignesh Ram</p>
     </section>
 </body>
 </html>
