@@ -5,6 +5,13 @@
     <title>@ViewBag.Title</title>
     <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
     <script src="@Url.Content("~/Scripts/jquery-1.5.1.min.js")"></script>
+    <script>
+        function showStuff(event) {
+            event.currentTarget.children[0].style.display = 'block';
+        }
+        function hideStuff(event) {
+            event.currentTarget.children[0].style.display = 'none';
+        }    </script>
     <script src="@Url.Content("~/Scripts/modernizr-1.7.min.js")"></script>
 </head>
 <body>
