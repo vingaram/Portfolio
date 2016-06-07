@@ -19,5 +19,8 @@ namespace MvcDemo.Controllers
 
         public ActionResult Projects()
         { return View(); }
+
+        public ActionResult Game()
+        { return View(); }
     }
 }
