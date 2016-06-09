@@ -9,12 +9,7 @@
     
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script>
-        function showStuff(event) {
-            event.currentTarget.children[0].style.display = 'block';
-        }
-        function hideStuff(event) {
-            event.currentTarget.children[0].style.display = 'none';
-        }
+        
         $(document).ready(function () {
             $('.collapse').on('shown.bs.collapse', function () {
                 $(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
