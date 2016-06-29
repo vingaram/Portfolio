@@ -12,15 +12,26 @@ namespace MvcDemo.Controllers
         { return View(); }
 
         public ActionResult About()
-        { return View(); }
+        {
+            ViewData["view"] = "A";
+            return View(); }
 
         public ActionResult Contact()
-        { return View(); }
+        {
+            ViewData["view"] = "C";
+            return View();
+        }
 
         public ActionResult Projects()
-        { return View(); }
+        {
+            ViewData["view"] = "P";
+            return View();
+        }
 
         public ActionResult Game()
-        { return View(); }
+        {
+            ViewData["view"] = "G";
+            return View();
+        }
     }
 }
