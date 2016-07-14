@@ -35,7 +35,7 @@ $(document).ready(function(){
     
     <ul class="nav nav-pills nav-justified">
         <li class = "@(ViewData["view"].ToString() == "A" ? "active" : "")">@Html.ActionLink("About Me", "About", "Home")</li>
-        <li><a href="https://github.com/vingaram/Resume/blob/master/Vignesh_CV.docx?raw=true">Resume</a></li>
+        <li><a href="https://docs.google.com/viewer?url=https://github.com/vingaram/Resume/blob/master/Vignesh%20CV.pdf?raw=true" target="_blank">Resume</a></li>
         <li class = "@(ViewData["view"].ToString() == "P" ? "active" : "")">@Html.ActionLink("Projects", "Projects", "Home")</li>
         <li class = "@(ViewData["view"].ToString() == "C" ? "active" : "")">@Html.ActionLink("Contact", "Contact", "Home")</li>
         <li class = "@(ViewData["view"].ToString() == "G" ? "active" : "")">@Html.ActionLink("Game", "Game", "Home")</li>
