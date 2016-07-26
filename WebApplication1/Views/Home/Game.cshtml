@@ -1,27 +1,104 @@
-﻿
-<h1>Roller Madness</h1>
+﻿<h1>Games</h1>
+<div class="container">
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+            <a id="projects" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
 
-    How To Play
-    <br />
-    <p>Use <kbd>W A S D</kbd> or <kbd>&uarr; &larr; &darr; &rarr;</kbd> keys to move the roller ball. Collect gold coins to improve score. Avoid the cubes and don't fall down. 
-    The cubes destroy each other so try to get them to collide.</p>
+                        <span class="glyphicon glyphicon-plus"></span>
+                        Box Shooter
+                    </h4>
+                </div>
+            </a>
+            <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                    How To Play
+                    <br />
+                    <p>
+                        Use <kbd>W A S D</kbd> or <kbd>&uarr; &larr; &darr; &rarr;</kbd> keys to move the player and use the mouse to look around.
+                        Use Mouse Left Click or <kbd>Space</kbd> to fire. Aqua blocks add score, yellow blocks reduce time left and white blocks increase time left.
+                    </p>
 
+                    <p id="suggestion">
+                        Unfortunately, Google Chrome does not support Unity plugins.
+                        Please use Firefox to play to browser version of this game.
+                        Alternatively, you can use the below link to download the game on to your computer.
+                    </p>
 
-<div id="unityPlayer">
-    <div class="missing"></div>
-    <object id="UnityObject"
-            classid="clsid:444785F1-DE89-4295-863A-D46C3A781394"
-            width="800"
-            height="450"
-            codebase="http://webplayer.unity3d.com/download_webplayer/UnityWebPlayer.cab#version=2,0,0,0">
-        <param name="@Url.Content("~/Content/RollerMadness.unity3d")"
-               value="RollerMadness.unity3d" />
-        <embed id="UnityEmbed"
-               src="@Url.Content("~/Content/RollerMadness.unity3d")"
-               width="600"
-               height="450"
-               type="application/vnd.unity"
-               pluginspage="http://www.unity3d.com/unity-web-player-2.x" />
-    </object>
+                    <a href="@Url.Content("~/Content/BoxShooter.rar")" target="_blank">Download</a>
+
+                    <div id="unityPlayer1">
+                        <div class="missing"></div>
+                        <object id="UnityObject"
+                                classid="clsid:444785F1-DE89-4295-863A-D46C3A781394"
+                                width="800"
+                                height="450"
+                                codebase="http://webplayer.unity3d.com/download_webplayer/UnityWebPlayer.cab#version=2,0,0,0">
+                            <param name="@Url.Content("~/Content/BoxShooter.unity3d")"
+                                   value="BoxShooter.unity3d" />
+                            <embed id="UnityEmbed"
+                                   src="@Url.Content("~/Content/BoxShooter.unity3d")"
+                                   width="600"
+                                   height="450"
+                                   type="application/vnd.unity"
+                                   pluginspage="http://www.unity3d.com/unity-web-player-2.x" />
+                        </object>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                <a id="projects" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+
+                            <span class="glyphicon glyphicon-plus"></span>
+                            Roller Madness
+                        </h4>
+                    </div>
+                </a>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        How To Play
+                        <br />
+                        <p>
+                            Use <kbd>W A S D</kbd> or <kbd>&uarr; &larr; &darr; &rarr;</kbd> keys to move the roller ball. Collect gold coins to improve score. Avoid the cubes and don't fall down.
+                            The cubes destroy each other so try to get them to collide.
+                        </p>
+
+                        <p id="suggestion2">
+                            Unfortunately, Google Chrome does not support Unity plugins.
+                            Please use Firefox to play to browser version of this game.
+                            Alternatively, you can use the below link to download the game on to your computer.
+                        </p>
+
+                        <a href="@Url.Content("~/Content/RollerMadness.rar")" target="_blank">Download</a>
+
+                        <div id="fun">
+                            <div class="missing"></div>
+                            <object id="UnityObject"
+                                    classid="clsid:444785F1-DE89-4295-863A-D46C3A781394"
+                                    width="800"
+                                    height="450"
+                                    codebase="http://webplayer.unity3d.com/download_webplayer/UnityWebPlayer.cab#version=2,0,0,0">
+                                <param name="@Url.Content("~/Content/RollerMadness.unity3d")"
+                                       value="RollerMadness.unity3d" />
+                                <embed id="UnityEmbed"
+                                       src="@Url.Content("~/Content/RollerMadness.unity3d")"
+                                       width="600"
+                                       height="450"
+                                       type="application/vnd.unity"
+                                       pluginspage="http://www.unity3d.com/unity-web-player-2.x" />
+                            </object>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
 </div>
-

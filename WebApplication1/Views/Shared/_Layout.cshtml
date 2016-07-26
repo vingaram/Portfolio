@@ -4,40 +4,44 @@
     <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
     <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+            crossorigin="anonymous"></script>
     
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script>
-        
-        $(document).ready(function () {
-            $('.collapse').on('shown.bs.collapse', function () {
-                $(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
-            }).on('hidden.bs.collapse', function () {
-                $(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
-            });
-        });
-     </script>
-    <script src="@Url.Content("~/Scripts/modernizr-1.7.min.js")"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-browser/0.0.8/jquery.browser.min.js"></script>
     <script>
-$(document).ready(function(){
-    if ($.browser.chrome === true && $.browser.versionNumber >= 45) { //detect Chrome 45+
-        $('#unityPlayer .missing').prepend('<center>Install Gameload to play Unity games<br /><a href="https://chrome.google.com/webstore/detail/game-player-app/cajoopobkbcpiniljegibngikdbidbkh" title="Install Gameload now!"><img alt="Install Gameload now!" src="http://data.gameload.top/download/getgameload.png" /></a></center>');
+        $(document).ready(function () {
+            
+            $('.collapse').on('show.bs.collapse', function () {
+            
+                $(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+            }).on('hide.bs.collapse', function () {
+                $(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+            });
+            $('#suggestion').hide();
+            $('#suggestion2').hide();
+            if ($.browser.chrome === true && $.browser.versionNumber >= 45) { //detect Chrome 45+
+                $('#fun').hide();
+                $('#unityPlayer1').hide();
+                $('#suggestion').show();
+                $('#suggestion2').show();
     }
 });
     </script>
     
-    <meta data-unity-replace="true" data-div-id="#unityPlayer" data-width="800" data-height="600" data-file="@Url.Content("~/Content/RollerMadness.unity3d")" data-type="unity" data-title="RollerMadness" />
+
 </head>
 <body>
     
     <ul class="nav nav-pills nav-justified">
         <li class = "@(ViewData["view"].ToString() == "A" ? "active" : "")">@Html.ActionLink("About Me", "About", "Home")</li>
-        <li><a href="https://docs.google.com/viewer?url=https://github.com/vingaram/Resume/blob/master/Vignesh%20CV.pdf?raw=true" target="_blank">Resume</a></li>
+        <li><a href="https://docs.google.com/viewer?url=https://github.com/vingaram/Resume/blob/master/Vignesh_CV.pdf?raw=true" target="_blank">Resume</a></li>
         <li class = "@(ViewData["view"].ToString() == "P" ? "active" : "")">@Html.ActionLink("Projects", "Projects", "Home")</li>
-        <li class = "@(ViewData["view"].ToString() == "C" ? "active" : "")">@Html.ActionLink("Contact", "Contact", "Home")</li>
         <li class = "@(ViewData["view"].ToString() == "G" ? "active" : "")">@Html.ActionLink("Game", "Game", "Home")</li>
     </ul>
     <section id="main">
