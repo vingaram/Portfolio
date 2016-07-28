@@ -168,10 +168,16 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\RollerMadness.unity3d" />
-    <Content Include="Content\BoxShooter.unity3d" />
-    <Content Include="Content\BoxShooter.rar" />
-    <Content Include="Content\RollerMadness.rar" />
+    <Content Include="Content\RollerMadness_Linux.rar" />
+    <Content Include="Content\RollerMadness_Mac.rar" />
+    <Content Include="Content\RollerMadness_x86.rar" />
+    <Content Include="Content\RollerMadness_x86_64.rar" />
+    <Content Include="Content\BoxShooter_Linux.rar" />
+    <Content Include="Content\BoxShooter_Mac.rar" />
+    <Content Include="Content\BoxShooter_x86.rar" />
+    <Content Include="Content\BoxShooter_x86_64.rar" />
+    <Content Include="Content\BoxShooter_Web.unity3d" />
+    <Content Include="Content\RollerMadness_Web.unity3d" />
     <None Include="Properties\PublishProfiles\Portfolio.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
